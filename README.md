@@ -44,7 +44,7 @@ I consider the following technologies for Resolve the problem:
 >Open file customElasticsearchIndex.py from app dir and run it for create the elasticsearch index
 >Open file getMain.py from app dir and run it for run the main app.
 
-![Image of elasticsearch](/img/FrankoDashboard.png)
+![Image of elasticsearch](/img/FromKafka_ToElasticserach.png)
 
 6. Open dashboard-kibana in web browser http://localhost:5601 and go to dashboards and visualize graphics
 
