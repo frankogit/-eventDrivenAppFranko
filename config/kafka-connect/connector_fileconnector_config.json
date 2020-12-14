@@ -1,0 +1,10 @@
+{
+  "name": "fileconnector",
+  "config": {
+    "connector.class": "org.apache.kafka.connect.file.FileStreamSourceConnector",
+    "tasks.max": "3",
+    "file": "/home/input1.csv",
+    "topic": "sciencesourcetopic",
+    "batch.size": "100"
+  }
+}
