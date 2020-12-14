@@ -23,7 +23,7 @@ I consider the following technologies for Resolve the problem:
 
 https://data.cms.gov/Medicare-Physician-Supplier/Medicare-Provider-Utilization-and-Payment-Data-Phy/fs4p-t5eq/data
 
-2. Run containers( +compose)
+2. Run containers( +compose) using files from docker dir
 
 >docker run -d --name jupyter3 -e "TZ=America/Lima" -p 1002:8888 jupyter/datascience-notebook
 
@@ -31,7 +31,9 @@ https://data.cms.gov/Medicare-Physician-Supplier/Medicare-Provider-Utilization-a
 
 >docker-compose -f elasticsearch-elastic.yml up -d
 
-3. Move datasource file to connect container: docker cp input1.csv connect: /home/input1.csv
+3. Move datasource file to connect container: 
+
+>docker cp input1.csv connect: /home/input1.csv
 
 4. Open kafka in web browser http://localhost:9021
 
