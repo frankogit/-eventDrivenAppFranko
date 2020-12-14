@@ -8,12 +8,12 @@ In High level data will be extract from Medicare to a csv , then using kafka I w
 
 I consider the following technologies for Resolve the problem:
 
-•	Docker-compose and containers
-•	Kafka topcis, consumergroups and connect
-•	Python Consumerscript -Jupyter
-•	S3 bucket
-•	Elasticsearch Index
-•	Kibana visualizations and dashboards
+*	Docker-compose and containers
+*	Kafka topcis, consumergroups and connect
+*	Python Consumerscript -Jupyter
+*	S3 bucket
+*	Elasticsearch Index
+*	Kibana visualizations and dashboards
  
 ![Image of stack](/img/frankoScienceDiagram.png)
 
