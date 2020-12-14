@@ -24,7 +24,9 @@ I consider the following technologies for Resolve the problem:
 2. Run containers( +compose)
 
 >docker run -d --name jupyter3 -e "TZ=America/Lima" -p 1002:8888 jupyter/datascience-notebook
+
 >docker-compose -f kafka-confluent.yml up -d
+
 >docker-compose -f elasticsearch-elastic.yml up -d
 
 3. Move datasource file to connect container: docker cp input1.csv connect: /home/input1.csv
@@ -50,7 +52,8 @@ I consider the following technologies for Resolve the problem:
 
 ![Image of kibana](/img/FrankoDashboard.png)
 > KIBANA DASHBOARD: Count by provider, Credentiales per Gender, count service by HCPCS code , Count by StateCode
-7.Open aws console and check the batch data landing in s3
+
+7. Open aws console and check the batch synthethic data landing in s3
 
 ![Image of s3](/img/SyntheticDataS3.png)
 
