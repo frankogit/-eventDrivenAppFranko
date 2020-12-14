@@ -19,7 +19,9 @@ I consider the following technologies for Resolve the problem:
 
 ### Up environment:
 
-1. Get sample data(.csv) from https://data.cms.gov/Medicare-Physician-Supplier/Medicare-Provider-Utilization-and-Payment-Data-Phy/fs4p-t5eq/data
+1. Get sample data(.csv) from:
+
+https://data.cms.gov/Medicare-Physician-Supplier/Medicare-Provider-Utilization-and-Payment-Data-Phy/fs4p-t5eq/data
 
 2. Run containers( +compose)
 
