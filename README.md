@@ -1,8 +1,8 @@
-# -#EventDrive to Medicare
+# EventDrive to Medicare
 
 Process in real time Medicare provider information from US and show insights and a pipeline.
 
-###Solution
+### Solution
 
 In High level data will be extract from Medicare to a csv , then using kafka I will create a kafka topic and move data from csv to kafka using kafka connect, next step is consume it with a python consumer and finally transform and show the data in a dashboard. Additionally from original data i will generate synthetic data from the original and move it into batch to aws s3. All built with container-microservices.
 
@@ -17,7 +17,7 @@ I consider the following technologies for Resolve the problem:
  
 ![Image of stack](/img/frankoScienceDiagram.png)
 
-###Up environment:
+### Up environment:
 
 1. Get sample data(.csv) from https://data.cms.gov/Medicare-Physician-Supplier/Medicare-Provider-Utilization-and-Payment-Data-Phy/fs4p-t5eq/data
 
@@ -49,12 +49,12 @@ I consider the following technologies for Resolve the problem:
 6. Open dashboard-kibana in web browser http://localhost:5601 and go to dashboards and visualize graphics
 
 ![Image of kibana](/img/FrankoDashboard.png)
-
+> KIBANA DASHBOARD: Count by provider, Credentiales per Gender, count service by HCPCS code , Count by StateCode
 7.Open aws console and check the batch data landing in s3
 
 ![Image of s3](/img/SyntheticDataS3.png)
 
-###Deep explanation
+### Deep explanation
 
 I started downloading the medicare file, but it is so heavy I splitted to multiple files of 10000010 records per file.
 
@@ -66,4 +66,4 @@ I prepared 2 Json(dictionaries) in the consumer, the first one(OriginalData) for
 
 And Finally all docs(json) in Elasticseach Index will be visualized in a kibana dashboard. I chose Kibana as second option my first one was apache superset, but superset documentation says docker for windows is not working just now. Anyway Kibana handle multiple visualizations and supports dashboards in real time, also  allows all elastic querys from Elasticsearch. 
 
-KIBANA DASHBOARD: Count by provider, Credentiales per Gender, count service by HCPCS code , Count by StateCode
+
